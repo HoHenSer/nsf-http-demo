@@ -157,7 +157,7 @@ public class WebController {
     }
 
     private String get_annual( String Product) {
-        String url = String.format("http://%s:%s%s?product_name=%s", "127.0.0.1", "8081", "/detail/get_annual", Product); // 打包改成8080
+        String url = String.format("http://%s:%s%s?product_name=%s", "nsf-product-detail", "8080", "/detail/get_annual", Product); // 打包改成8080
         System.out.println(url);
         RestTemplate restTemplate = new RestTemplate();
         try {
